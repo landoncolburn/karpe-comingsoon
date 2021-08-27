@@ -1,16 +1,15 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .App-header {
@@ -20,19 +19,87 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit {
+  padding: 1rem 1.5rem;
+  background-color: #E96649;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.email {
+  display: block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  margin-top: 0.5rem;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.email:hover {
+  box-shadow:
+  0 0px 30px 10px rgba(255,255,255,0.03);
+}
+
+.email:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow:
+  0 0px 30px 10px rgba(255,255,255,0.1);
+}
+
+.email::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+form {
+  margin-top: 4rem;
+  max-width: 500px;
+  width: 100%;
+}
+
+.text-wrap {
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+}
+
+.logo {
+  height: 3rem;
+  margin: 1.5rem 2rem;
+}
+
+.hamburger {
+  float: right;
+  margin: 1.5rem 2rem;
+  height: 3rem;
+  fill: white;
+}
+
+.submit:hover {
+  transform: scale(1.05);
 }
